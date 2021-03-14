@@ -1,28 +1,58 @@
 import React from "react";
-
-export default function BlogCard({ cardImg }) {
+import Tag from "./Tag";
+import { navigate } from "gatsby";
+export default function BlogCard({
+  thumbnail,
+  tag,
+  title,
+  description,
+  author,
+  slug,
+  date,
+}) {
   return (
-    <div className="relative">
-      {" "}
-      <img src={cardImg} className="max-h-30 absolute w-full top-0" />
-      <div
-        className="inline-flex pt-60 flex-col space-y-1.5 items-start justify-start p-7 bg-white shadow"
-        style={{ width: 400, height: 500 }}
-      >
-        <div className="w-11/12  h-7">
-          <p className="flex-1 text-lg text-gray-700">22 Oct 2020</p>
-        </div>
-        <div className="w-11/12 h-14">
-          <p className="flex-1 text-lg font-semibold text-gray-700">
-            Getting Started with NodeJS and express
+    <div
+      onClick={() => navigate(slug)}
+      class=" cursor-pointer max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800"
+    >
+      <img class="object-cover w-full h-64" src={thumbnail} alt="Article" />
+
+      <div class="p-6">
+        <div>
+          <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
+            {tag}
+          </span>
+          <a
+            href={slug}
+            onClick={() => navigate(slug)}
+            class="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline"
+          >
+             {title}
+          </a>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            {description}
           </p>
         </div>
-        <div className="w-11/12 h-36">
-          <p className="flex-1 h-full text-lg text-gray-500">
-            IndigoWorkPlace Platform that generates a video slider from media
-            (PDF/JPG/PNG) by choosing layout, background, videos and select the
-            zones.
-          </p>
+
+        <div class="mt-4">
+          <div class="flex items-center">
+            <div class="flex items-center">
+              <img
+                class="object-cover h-10 rounded-full"
+                src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60"
+                alt="Avatar"
+              />
+              <a
+                href="#"
+                class="mx-2 font-semibold text-gray-700 dark:text-gray-200"
+              >
+                {author}
+              </a>
+            </div>
+            <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">
+              {date}
+            </span>
+          </div>
         </div>
       </div>
     </div>

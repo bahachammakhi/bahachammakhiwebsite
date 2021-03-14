@@ -1,0 +1,76 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js add @fortawesome/fontawesome-free
+
+PATH: 
+  /Users/mac/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/mac/google-cloud-sdk/bin:/Users/mac/.cargo/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/gatsby-plugin-manifest: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:141376:19)
+      at Object.onceWrapper (events.js:421:28)
+      at ClientRequest.emit (events.js:315:20)
+      at TLSSocket.emitRequestTimeout (_http_client.js:784:9)
+      at Object.onceWrapper (events.js:421:28)
+      at TLSSocket.emit (events.js:327:22)
+      at TLSSocket.Socket._onTimeout (net.js:483:8)
+      at listOnTimeout (internal/timers.js:554:17)
+      at processTimers (internal/timers.js:497:7)
+
+npm manifest: 
+  {
+    "name": "bahachammakhifront",
+    "version": "1.0.0",
+    "private": true,
+    "description": "bahachammakhifront",
+    "author": "Baha chammakhi",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean"
+    },
+    "dependencies": {
+      "@mdx-js/mdx": "^1.6.22",
+      "@mdx-js/react": "^1.6.22",
+      "gatsby": "^2.32.8",
+      "gatsby-image": "^2.11.0",
+      "gatsby-plugin-google-analytics": "^2.11.0",
+      "gatsby-plugin-manifest": "^2.12.1",
+      "gatsby-plugin-mdx": "^1.10.1",
+      "gatsby-plugin-offline": "^3.10.2",
+      "gatsby-plugin-react-helmet": "^3.10.0",
+      "gatsby-plugin-sharp": "^2.14.3",
+      "gatsby-plugin-sitemap": "^2.12.0",
+      "gatsby-source-filesystem": "^2.11.1",
+      "gatsby-transformer-remark": "^2.16.1",
+      "gatsby-transformer-sharp": "^2.12.0",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-helmet": "^6.1.0"
+    },
+    "devDependencies": {
+      "autoprefixer": "^10.2.4",
+      "gatsby-plugin-postcss": "^4.0.0",
+      "postcss": "^8.2.6",
+      "tailwindcss": "^2.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

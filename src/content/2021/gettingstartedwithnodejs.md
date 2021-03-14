@@ -1,10 +1,14 @@
 ---
 slug: "/blog/getting-started-with-nodejs"
-date: "2019-05-04"
-title: "My first blog post"
+date: "2021-02-04"
+thumbnail: "https://res.cloudinary.com/bahachammakhi/image/upload/v1613310888/Black_Technology_Blog_Banner_ea809724f2.png"
+title: "Getting started with nodejs"
+tag: nodejs
+popular: true
+author: Baha eddine chammakhi
 ---
 
-![Black Technology Blog Banner](https://res.cloudinary.com/bahachammakhi/image/upload/v1613310888/Black_Technology_Blog_Banner_ea809724f2.png)
+<!-- ![Black Technology Blog Banner](https://res.cloudinary.com/bahachammakhi/image/upload/v1613310888/Black_Technology_Blog_Banner_ea809724f2.png) -->
 
 ---
 

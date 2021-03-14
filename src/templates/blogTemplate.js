@@ -6,16 +6,14 @@ export default function Template({
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
-    </div>
+    <article className="container m-auto">
+      <h1>{frontmatter.title}</h1>
+      <h2>{frontmatter.date}</h2>
+      <div
+        className="markdown container m-auto max-w-screen-md  "
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+    </article>
   );
 }
 export const pageQuery = graphql`

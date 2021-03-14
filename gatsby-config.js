@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "bahachammakhifront",
+    siteUrl: "https://www.bahachammakhi.tn",
   },
   plugins: [
     {

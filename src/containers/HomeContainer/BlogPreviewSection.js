@@ -1,5 +1,5 @@
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql, navigate } from "gatsby";
 import BlogCard from "../../components/ui/BlogCard";
 import Button from "../../components/ui/Button";
 import Card from "../../components/ui/Card";
@@ -63,13 +63,8 @@ export default function BlogPreviewSection() {
         )}
       </div>
       <div className="mt-5">
-        <Button label="SEE MORE" />
+        <Button onClick={() => navigate("/blog")} label="SEE MORE" />
       </div>
     </section>
   );
-}
-{
-  /* <div className="m-4 w-full">
-          <Card />
-        </div> */
 }

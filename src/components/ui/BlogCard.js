@@ -23,7 +23,6 @@ export default function BlogCard({
             {tag}
           </span>
           <a
-            href={slug}
             onClick={() => navigate(slug)}
             class="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline"
           >

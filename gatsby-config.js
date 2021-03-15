@@ -1,7 +1,22 @@
+const config = require("./src/data/config");
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: "bahachammakhifront",
+    title: "bahachammakhi",
     siteUrl: "https://www.bahachammakhi.tn",
+    rssMetadata: {
+      site_url: "https://www.bahachammakhi.tn",
+      feed_url: `${config.url}${config.siteRss}`,
+      title: "Baha | Blog",
+      description: config.defaultDescription,
+      // image_url: "https://smakosh.com/static/favicon/logo-512.png",
+      author: config.author,
+      copyright: `${config.defaultTitle} © ${new Date().getFullYear()}`,
+    },
   },
   plugins: [
     {

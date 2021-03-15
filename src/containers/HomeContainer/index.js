@@ -10,7 +10,7 @@ import { SEO } from "../../components/SEO";
 
 const HomeContainer = () => {
   return (
-    <main>
+    <div>
       <SEO title="Hello world!" type="Organization" />
       <title>Home Page</title>
       <section id="herosection">
@@ -30,7 +30,7 @@ const HomeContainer = () => {
       <ServicesSection />
       <Projects />
       <BlogPreviewSection />
-    </main>
+    </div>
   );
 };
 

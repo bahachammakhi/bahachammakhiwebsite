@@ -7,7 +7,7 @@ export default function Layout({ children }) {
       <header>
         <NavBar />
       </header>
-      {children}
+      <main className="pt-10">{children}</main>
       <footer>
         <Footer />
       </footer>

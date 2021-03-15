@@ -8,7 +8,7 @@ popular: true
 author: Baha eddine chammakhi
 ---
 
-<!-- ![Black Technology Blog Banner](https://res.cloudinary.com/bahachammakhi/image/upload/v1613310888/Black_Technology_Blog_Banner_ea809724f2.png) -->
+![Black Technology Blog Banner](https://res.cloudinary.com/bahachammakhi/image/upload/v1613310888/Black_Technology_Blog_Banner_ea809724f2.png) 
 
 ---
 

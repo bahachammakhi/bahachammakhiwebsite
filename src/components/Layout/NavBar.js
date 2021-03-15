@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from "gatsby";
 
 export default function NavBar() {
   return (
@@ -13,22 +14,28 @@ export default function NavBar() {
         </p>
       </div>
       <div className="flex space-x-8 items-start justify-start">
-        <a href="#" className="w-20 h-full text-2xl text-blue-500">
+        <a
+          onClick={() => navigate("/")}
+          className="w-20 h-full text-2xl text-blue-500"
+        >
           Home
         </a>
-        <a href="#" className="w-24 h-full text-2xl text-gray-700">
+        <a href="/#projects" className="w-24 h-full text-2xl text-gray-700">
           Projects
         </a>
         <a href="#" className="w-20 h-full text-2xl text-gray-700">
           About
         </a>
-        <a href="#" className="w-24 h-full text-2xl text-gray-700">
+        <a href="/#services" className="w-24 h-full text-2xl text-gray-700">
           Services
         </a>
-        <a href="#" className="w-14 h-full text-2xl text-gray-700">
+        <a
+          onClick={() => navigate("/blog")}
+          className="w-14 h-full text-2xl text-gray-700"
+        >
           Blog
         </a>
-        <a href="#" className="w-28 h-full text-2xl text-gray-700">
+        <a href="#contact" className="w-28 h-full text-2xl text-gray-700">
           Contact
         </a>
       </div>

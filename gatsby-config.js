@@ -62,6 +62,12 @@ module.exports = {
         name: `markdown`,
       },
     },
+    {
+      resolve: "gatsby-source-hashnode",
+      options: {
+        username: "bahachammakhi",
+      },
+    },
     `gatsby-transformer-remark`,
     "gatsby-plugin-postcss",
   ],

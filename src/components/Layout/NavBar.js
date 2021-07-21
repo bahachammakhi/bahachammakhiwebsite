@@ -63,7 +63,7 @@ export default function NavBar() {
         >
           Blog
         </a>
-        <a href="#contact" className="w-28 h-full text-2xl text-gray-700">
+        <a href="/contact" className="w-28 h-full text-2xl text-gray-700">
           Contact
         </a>
       </div>

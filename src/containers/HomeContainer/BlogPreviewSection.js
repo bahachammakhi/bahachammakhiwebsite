@@ -4,31 +4,26 @@ import BlogCard from "../../components/ui/BlogCard";
 import Button from "../../components/ui/Button";
 import Card from "../../components/ui/Card";
 
-const imgLink =
-  "https://res.cloudinary.com/bahachammakhi/image/upload/v1613310888/Black_Technology_Blog_Banner_ea809724f2.png";
+const options = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+
 export default function BlogPreviewSection() {
   const {
     popular: { edges },
   } = useStaticQuery(graphql`
     query {
-      popular: allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { popular: { eq: true } } }
-        limit: 3
-      ) {
+      popular: allHashNodePost {
         edges {
           node {
-            description: excerpt(pruneLength: 230)
-            id
-            timeToRead
-            frontmatter {
-              title
-              date(formatString: "MMM DD, YYYY")
-              author
-              tag
-              slug
-              thumbnail
-            }
+            brief # "In this article..."
+            coverImage # "http://..."
+            slug # "my-great-article"
+            title # "My Great Article"
+            dateAdded
           }
         }
       }
@@ -36,34 +31,30 @@ export default function BlogPreviewSection() {
   `);
 
   return (
-    <section className="flex  flex-col items-center">
+    <section className="flex m-auto  flex-col items-center">
       <h1 className="text-5xl font-bold my-10 text-gray-700">Articles</h1>
       <div className="flex flex-wrap m-auto container">
         {edges.map(
-          ({
-            node: {
-              id,
-              description,
-              timeToRead,
-              frontmatter: { title, date, thumbnail, tag, author, slug },
-            },
-          }) => (
+          ({ node: { brief, dateAdded, slug, title, coverImage } }) => (
             <div className="m-4">
               <BlogCard
-                description={description}
-                date={date}
+                description={brief}
+                date={new Date(dateAdded).toLocaleDateString("en-US", options)}
                 slug={slug}
-                thumbnail={thumbnail}
-                tag={tag}
+                thumbnail={coverImage}
+                tag={"tag"}
                 title={title}
-                author={author}
+                author={"author"}
               />
             </div>
           )
         )}
       </div>
       <div className="mt-5">
-        <Button onClick={() => navigate("/blog")} label="SEE MORE" />
+        <Button
+          onClick={() => window.open("https://blog.bahachammakhi.tn/")}
+          label="SEE MORE"
+        />
       </div>
     </section>
   );

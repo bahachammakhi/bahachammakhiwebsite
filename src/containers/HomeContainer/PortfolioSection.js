@@ -11,22 +11,16 @@ export default function PortfolioSection() {
             id
             title
             image
-            # image {
-            #   childImageSharp {
-            #     fluid(maxWidth: 630) {
-            #       ...GatsbyImageSharpFluid_tracedSVG
-            #     }
-            #   }
-            # }
-            image
             link
+            company
             description
+            tags
           }
         }
       }
     }
   `);
-  console.log(sideProjects.edges);
+
   return (
     <section id="projects" class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">

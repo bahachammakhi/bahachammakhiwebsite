@@ -1,12 +1,32 @@
 - title: IndigoWorkPlace
+  company: Indigo
   image: https://res.cloudinary.com/bahachammakhi/image/upload/v1592562094/Screenshot_from_2020_03_24_21_46_09_1c474fda8b.png
   link: https://app.indigoworkplace.com/
   description: IndigoWorkPlace Platform that generates a video slider from media (PDF/JPG/PNG) by choosing layout, background, videos and select the zones.
+  tags: Reactjs - Redux - Ant design
 - title: Win mechy
+  company: WeReact
   image: https://res.cloudinary.com/bahachammakhi/image/upload/v1592562370/Win_mechi_wyn_mashy_Google_Chrome_4_12_2020_11_23_45_PM_4761efbb9f.png
   link: https://chedarek.wereact.co/
+  tags: Reactjs - Redux - CSS
   description: a platform made on the period of quarantine to make exit authorizations
 - title: IMNT
+  company: WeReact
   image: https://res.cloudinary.com/bahachammakhi/image/upload/v1592563474/Screenshot_from_2020_03_24_21_52_11_2e7b0f4177.png
   link: https://formation-front.wereactinc.online/
   description: Showcase website for a training center  with an administration panel,inscription system .
+  tags: Redux - React - Nodejs - Express
+- title: Eggmed
+  company: Eggmed
+  image: https://www.eggmed.com/images/logo.svg
+  description: Empowering healthcare providers and creating a better experience for patients
+  tags: Reactjs - Grahphql - MaterialUI - Apollo - Nodejs - Docker - AWS
+# - title: Smart business
+#   image: https://www.eggmed.com/images/logo.svg
+#   description: Empowering healthcare providers and creating a better experience for patients
+- title: Expertify
+  company: Become
+  image: https://expetify.vercel.app/expertify-logo.svg
+  description: A landing page for mini Shopify services
+  link: https://expetify.vercel.app/
+  tags: Nextjs - TailwindCSS

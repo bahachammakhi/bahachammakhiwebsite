@@ -10,7 +10,7 @@ import { SEO } from "../../components/SEO";
 
 const HomeContainer = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden m-auto">
       <SEO title="Hello world!" type="Organization" />
       <title>Home Page</title>
       <section id="herosection">

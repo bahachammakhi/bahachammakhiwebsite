@@ -30,7 +30,7 @@ export default function Footer() {
                 Let's keep in touch!
               </h4>
               <h5 className="text-lg mt-0 mb-2 text-white">
-                Find us on any of these platforms, we respond 1-2 business days.
+                Find me on any of sthese platforms, I respond 1-2 business days.
               </h5>
               <div className="mt-6">
                 <button
@@ -69,15 +69,17 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation"
+                        href="https://resume.bahachammakhi.tn"
+                        target="_blank"
                       >
-                        About Us
+                        Resume
                       </a>
                     </li>
                     <li>
                       <a
                         className="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://blog.creative-tim.com"
+                        href="https://blog.bahachammakhi.tn"
+                        target="_blank"
                       >
                         Blog
                       </a>
@@ -85,7 +87,8 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial"
+                        href="https://www.github.com/bahachammakhi"
+                        target="_blank"
                       >
                         Github
                       </a>
@@ -93,48 +96,10 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free"
+                        href="/contact"
+                        target="_blank"
                       >
-                        Free Products
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="w-full lg:w-4/12 px-4">
-                  <span className="block uppercase text-white text-sm font-semibold mb-2">
-                    Other Resources
-                  </span>
-                  <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                      >
-                        MIT License
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms"
-                      >
-                        Terms & Conditions
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy"
-                      >
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us"
-                      >
-                        Contact Us
+                        Contact us
                       </a>
                     </li>
                   </ul>

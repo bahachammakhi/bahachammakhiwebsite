@@ -18,7 +18,7 @@ export default function CatchupSection() {
         </h2>
       </div>
       <p className="my-5 text-xl sm:text-2xl font-light">
-        Specialized in JavaScript with over a two years of experience in
+        Specialized in JavaScript with over a three years of experience in
         building the web and working with technologies like
       </p>
     </div>
